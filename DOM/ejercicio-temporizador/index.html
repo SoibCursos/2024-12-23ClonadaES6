@@ -21,7 +21,7 @@
             }
 
             else
-            
+
             {
                 clearInterval(countDown);
                 console.log(timeLeft);
@@ -29,6 +29,25 @@
             } 
         }, 1000);
         console.log(countDown);
+
+        function start(){
+            const countDown = setInterval(()=>{
+            if(timeLeft>0){
+                console.clear();
+                console.log(timeLeft);
+                timeLeft--
+            }
+
+            else
+
+            {
+                clearInterval(countDown);
+                console.log(timeLeft);
+                alert("Se acabo el tiempo");
+            } 
+        }, 1000);
+        console.log(countDown);
+        }
     </script>
 </body>
 
